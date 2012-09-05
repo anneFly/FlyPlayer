@@ -1,0 +1,16 @@
+{
+	"path": "audio/",
+	"titles": [
+		"Sergey Kovchik - Butterfly", "Arnaud Conde - Interlude"
+		],
+	"filenames": [
+		[
+			"Butterfly.mp3",
+			"Butterfly.ogg"
+		],
+		[
+			"Interlude.mp3",
+			"Interlude.ogg"
+		]
+	]
+}

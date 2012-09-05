@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>FlyPlayer - HTML5 Audio Player</title>
+	<meta charset="UTF-8" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+	<script type="text/javascript" src="flyplayer/flyplayer.js"></script>
+	<link rel="stylesheet" type="text/css" href="flyPlayer/themes/rain/rainplayer.css" />
+</head>
+
+<body>
+	
+	<div id="audiowrapper">
+	</div>
+	<div id="rp" class="rainPlayer">
+		<div class="playerHead">
+			<button id="backButton" title="back" ></button>
+			<button id="playButton" title="play" ></button>
+			<button id="nextButton" title="next" ></button>
+			<svg id="svgBar" xmlns="http://www.w3.org/2000/svg" version="1.1" >
+				<defs>
+					<linearGradient id="barGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%" style="stop-color:rgb(20,20,20);stop-opacity:1" />
+						<stop offset="33%" style="stop-color:rgb(40,40,40);stop-opacity:1" />
+						<stop offset="100%" style="stop-color:rgb(20,20,20);stop-opacity:1" />
+					</linearGradient>
+					<linearGradient id="rectGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%" style="stop-color:rgb(130,130,130);stop-opacity:1" />
+						<stop offset="33%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
+						<stop offset="100%" style="stop-color:rgb(130,130,130);stop-opacity:1" />
+					</linearGradient>
+				</defs>
+				<rect id="barrect" x="0" y="0"  rx="4" ry="4" width="350" height="10" fill="url(#barGrad)"/>
+				<rect id="myrect" x="0" y="0"  rx="4" ry="4" width="0" height="10" fill="url(#rectGrad)"/> 
+			</svg>  
+			<button id="stopButton" title="stop" ></button>
+		</div>
+		<div class="clearer"></div>
+		
+		<div id="tracklist" class="playerList">
+		</div>
+		<div class="playerRight">
+			<canvas id="volCanvas" width="10" height="70"></canvas>
+			<button id="muteButton" title="mute" ></button>
+		</div>
+		<div class="clearer">&nbsp;</div>
+	</div>
+	
+	<audio id="flashFallback">
+		<!-- insert flash player fallback here -->
+	</audio>
+	<script type="text/javascript">
+		$(document).ready(function() {	
+			FlyPlayer.init({
+				audiocontainer: '#audiowrapper',
+				html5player: '#rp',
+				fallback: '#flashFallback',
+				play: '#playButton',
+				next: '#nextButton',
+				prev: '#backButton',
+				stop: '#stopButton',
+				mute: '#muteButton',
+				tracklist: '#tracklist',
+				outerBar: '#barrect',
+				innerBar: '#myrect',
+				volumeCanvas: '#volCanvas'
+			})
+		});
+	</script>
+</body>
+</html>

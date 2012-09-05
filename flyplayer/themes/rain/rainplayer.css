@@ -1,0 +1,392 @@
+.clearer {
+	clear: both;
+}
+
+/*Player*/
+
+@-webkit-keyframes play {
+	0% {
+		background-color: #222222;
+	}
+	10% {
+		background-color:#222233;		
+	}
+	20% {
+		background-color:#223322;
+	}
+	30% {
+		background-color: #332222;
+	}
+	40% {
+		background-color:#333322;		
+	}
+	50% {
+		background-color:#332233;
+	}
+	60% {
+		background-color: #333322;
+	}
+	70% {
+		background-color:#332222;		
+	}
+	80% {
+		background-color:#223322;
+	}
+	90% {
+		background-color: #222233;
+	}
+	100% {
+		background-color:#222222;
+	}
+}
+	
+@-moz-keyframes play {
+0% {
+		background-color: #222222;
+	}
+	10% {
+		background-color:#222233;		
+	}
+	20% {
+		background-color:#223322;
+	}
+	30% {
+		background-color: #332222;
+	}
+	40% {
+		background-color:#333322;		
+	}
+	50% {
+		background-color:#332233;
+	}
+	60% {
+		background-color: #333322;
+	}
+	70% {
+		background-color:#332222;		
+	}
+	80% {
+		background-color:#223322;
+	}
+	90% {
+		background-color: #222233;
+	}
+	100% {
+		background-color:#222222;
+	}
+}
+
+@-o-keyframes play {
+0% {
+		background-color: #222222;
+	}
+	10% {
+		background-color:#222233;		
+	}
+	20% {
+		background-color:#223322;
+	}
+	30% {
+		background-color: #332222;
+	}
+	40% {
+		background-color:#333322;		
+	}
+	50% {
+		background-color:#332233;
+	}
+	60% {
+		background-color: #333322;
+	}
+	70% {
+		background-color:#332222;		
+	}
+	80% {
+		background-color:#223322;
+	}
+	90% {
+		background-color: #222233;
+	}
+	100% {
+		background-color:#222222;
+	}
+}
+
+@keyframes play {
+0% {
+		background-color: #222222;
+	}
+	10% {
+		background-color:#222233;		
+	}
+	20% {
+		background-color:#223322;
+	}
+	30% {
+		background-color: #332222;
+	}
+	40% {
+		background-color:#333322;		
+	}
+	50% {
+		background-color:#332233;
+	}
+	60% {
+		background-color: #333322;
+	}
+	70% {
+		background-color:#332222;		
+	}
+	80% {
+		background-color:#223322;
+	}
+	90% {
+		background-color: #222233;
+	}
+	100% {
+		background-color:#222222;
+	}
+}
+
+
+.rainPlayer {
+	width: 620px;
+	background-color: #000000;
+	background-image: url('');
+	background-repeat: no-repeat;
+	background-position:center center;
+	background: -moz-linear-gradient(#000 25%, #555 80%, #000);
+	background: -webkit-linear-gradient(#000 25%, #555 80%, #000);
+	background: -o-linear-linear-gradient(#000 25%, #555 80%, #000);
+	background: linear-gradient(#000 25%, #555 80%, #000);
+	border: 1px solid transparent;
+	-moz-border-radius:15px; 
+	-webkit-border-radius:15px; 
+	-khtml-border-radius:15px;	
+	border-radius:15px;
+	padding:10px 10px 8px 10px;
+}
+
+
+#playButton {
+	margin-right: 14px;
+	width: 60px;
+	height: 65px;
+	float: left;
+	background: transparent url('images/playBtn.png') -13px -10px no-repeat;
+	border: none;
+}
+
+#playButton:hover {
+	background-position: -13px -124px;
+}
+
+#playButton:active {
+	background-position: -13px -237px;
+}
+
+#playButton.isPlaying {
+	background-position: -119px -10px;
+}
+
+#playButton.isPlaying:hover {
+	background-position: -119px -124px;
+}
+
+#playButton.isPlaying:active {
+	background-position: -119px -237px;
+}
+
+#stopButton {
+	margin-left: 14px;
+	width: 60px;
+	height: 59px;
+	float: left;
+	background: transparent url('images/stopBtn.png') -8px -19px no-repeat;
+	border: none;
+}
+
+#stopButton:hover {
+	background-position: -8px -132px;
+}
+
+#stopButton:active {
+	background-position: -8px -246px;
+}
+
+#backButton {
+	margin-top: 12px;
+	margin-right: 14px;
+	margin-left: 4px;
+	width: 30px;
+	height: 34px;
+	float: left;
+	background: transparent url('images/prevBtn.png') -14px -11px no-repeat;
+	border: none;
+}
+
+#backButton:hover {
+	background-position: -14px -68px;
+}
+
+#backButton:active {
+	background-position: -14px -124px;	
+}
+
+#nextButton {
+	margin-top: 12px;
+	margin-right: 14px;
+	width: 30px;
+	height: 35px;
+	float: left;
+	background: transparent url('images/nextBtn.png') -14px -12px no-repeat;
+	border: none;
+}
+
+#nextButton:hover {
+	background-position: -14px -67px;
+}
+
+#nextButton:active {
+	background-position: -14px -124px;	
+}
+
+#muteButton {
+	width: 20px;
+	height: 24px;
+	float: left;
+	margin-left: 3px;
+	margin-top: 2px;
+	background: transparent url('images/muteBtn.png') -3px -4px no-repeat;
+	border: none;
+	-moz-border-radius:3px; 
+	-webkit-border-radius:3px; 
+	-khtml-border-radius:3px;	
+	border-radius:3px;
+}
+
+#muteButton:hover {
+	background-color: #444444;
+}
+
+#muteButton.muted {
+	background-position: -32px -4px;
+}
+
+#svgBar {
+	float:left;
+	width:350px; 
+	height:10px;
+	margin-top:24px;
+}
+
+#volCanvas{
+	margin-top:0px;
+	background-color: #222222;
+	float: left;
+	margin-left: 7px;
+	border: 1px solid #444444;
+	-moz-border-radius:3px; 
+	-webkit-border-radius:3px; 
+	-khtml-border-radius:3px;	
+	border-radius:3px;
+}
+
+#muteButton.muted {
+	
+}
+
+.playerList {
+	float:left;
+	width:560px;
+	text-align:left;
+	background-color: #111111;
+	background-repeat: no-repeat;
+	background-position:center right;
+	margin-top: 12px;
+	padding: 2px 0 2px 0;
+	border-top: 1px solid #222222; 
+	border-right: 1px solid #555555; 
+	border-bottom: 1px solid #555555; 
+	border-left: 1px solid #333333; 
+	-moz-border-radius:15px; 
+	-webkit-border-radius:15px; 
+	-khtml-border-radius:15px;	
+	border-radius:15px;
+}
+
+
+.playerTrack {
+	cursor: pointer;
+	padding: 2px 0px 2px 12px;
+	margin: 6px 4px 6px 4px;
+	color: #dddddd;
+	font-family:Georgia, arial;
+	font-size: 0.8em;
+	border: 0px solid transparent; 
+	-moz-border-radius:7px; 
+	-webkit-border-radius:7px; 
+	-khtml-border-radius:7px;	
+	border-radius:7px;
+}
+
+.playerTrack:hover {
+	background-color: #222222;
+/*	opacity: 0.7; 
+	filter:alpha(opacity=70);*/
+}
+
+.playerTrack.active {
+	background-color: #333333;
+	/*opacity: 0.7; 
+	filter:alpha(opacity=70);*/
+	font-style: italic;
+	
+	-moz-animation-name: play;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-duration: 20s;
+	-moz-animation-direction: alternate;
+
+	-webkit-animation-name: play;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 20s;
+	-webkit-animation-direction: alternate;
+	
+	-o-animation-name: play;
+	-o-animation-timing-function: linear;
+	-o-animation-iteration-count: infinite;
+	-o-animation-duration: 20s;
+	-o-animation-direction: alternate;
+
+	animation-name: play;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 20s;
+	animation-direction: alternate;
+	
+}
+
+.playerRight {
+	float:right;
+	margin-top: 12px;
+	padding: 2px 0 2px 0;
+	text-align:right;
+	width: 26px;
+}
+
+
+.player_notification {
+	padding: 30px 0px 30px 12px;
+	margin: 6px 4px 6px 4px;
+	color: #dddddd;
+	font-family:Georgia, arial;
+	font-size: 0.8em;
+	border: 0px solid transparent; 
+	-moz-border-radius:7px; 
+	-webkit-border-radius:7px; 
+	-khtml-border-radius:7px;	
+	border-radius:7px;
+	text-align:center;
+}
